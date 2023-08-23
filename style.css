@@ -1,21 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
   background-color: blueviolet;
 }
 
 .faq {
-  
+  background-color: white;
   width: 86.5%;
   max-width: 900px;
   margin: 9rem auto;
-  height: 100vh;
+  height: 80vh;
   position: relative;
+ border-radius: 23px;
   
 }
+h2  {
+    background-color: white;
+}
 
+p {
+    background-color: white;
+}
+
+
+img {
+    background-color: white;
+    object-position: left top;
+}
 /* Create two equal columns that floats next to each other */
 .column {
-    background-color: white;
+    
   float: left;
   width: 50%;
   padding: 10px;
@@ -29,6 +44,98 @@
   display: table;
   clear: both;
 }
+
+#accordion-img {
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.accordion-title{
+      margin-block: 0px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 10px;
+  font-size: 30px;
+  line-height:10px;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+  padding: 0px;
+font-family:Helvetica,Arial,sans-serif;
+text-align: left;
+}
+.accordion {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  padding: 6px;
+  width: 90%;
+  border:#949494;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+    padding: 5px;
+    margin-bottom: 10px;
+     border-bottom: 1px solid rgba(167, 165, 165, 0.459);
+}
+
+.accordion:after {
+    content: url(images/icon-arrow-down.svg); width: 1px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    margin-right: 10px;
+
+  }
+
+
+.active, .accordion:hover {
+  background-color: white; 
+}
+.panel {
+  padding: 0 18px;
+  font-size: 14px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+    width: 90%;
+}
+
+
+.ACCp{
+    font-size: 13.5px;
+  line-height: 1.5;
+  color: #787887;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+
+.a-text{
+    background-color: white;
+}
+
+.a-text:hover{
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
